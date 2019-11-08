@@ -4,8 +4,9 @@ const inquirer = require("inquirer");
 const axios = require("axios");
 require("dotenv").config();
 const open= require("open");
-const convertFactory = require("electron-html-to");
 const generateHTML = require("./generateHTML");
+const pdf = require('html-pdf');
+
 
 
 const questions = [
@@ -64,13 +65,22 @@ function init() {
                 color: color
             }
             return generateHTML(userData);
-           }).then(function (html) {
-               console.log(html);
+           }).then(function (generatedHTML) {
+          
+            const options = { format: 'Letter' };
+
+            pdf.create(generatedHTML, options).toFile('./resume.pdf', function(err, res) {
+                if (err) return console.log(err);
+                console.log(res); // { filename: '/app/businesscard.pdf' }
+              });
+               
+              
+              });
            })
 
         })
 
-    })
-}
+    }
+
 
 init();
