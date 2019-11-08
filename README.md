@@ -11,3 +11,22 @@ This is a command line program. The program starts by asking for a GitHub userna
 
 ​
 ### Technologies-Libraries
+NodeJS - Server side code
+Axios - API calls
+electron-html-to - HTML to PDF conversion
+inquirer - User inputs on the command line​
+
+
+### Screenshots
+​
+![Image](images/Capture1.png)
+​
+![Image](images/Capture2.png)
+
+![Image](images/Capture3.png)
+
+![Image](images/Capture4.png)
+
+### Link
+Check it out! 
+https://jorgelopez5252.github.io/Developer-Profile-Generator/
