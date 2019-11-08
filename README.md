@@ -19,13 +19,13 @@ inquirer - User inputs on the command line​
 
 ### Screenshots
 ​
-![Image](images/Capture1.png)
+![Image](..images/Capture1.png)
 ​
-![Image](images/Capture2.png)
+![Image](..images/Capture2.png)
 
-![Image](images/Capture3.png)
+![Image](..images/Capture3.png)
 
-![Image](images/Capture4.png)
+![Image](..images/Capture4.png)
 
 ### Link
 Check it out! 
